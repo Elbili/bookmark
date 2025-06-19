@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Cairo+Play:slnt@-5&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body >
+<div class="main p-3">
+    <div class="container text-center mt-5">
+        <h1 class="marker fs-1 fw-bolde display-4 mb-5">Bookmarker</h1>
+        <div class="line w-100 mb-5"></div>
+        <i class="fa-solid fa-bookmark d-inline fs-3" style="color: #8ace36;"></i>
+        <h1 class="h2 text d-inline fs-4 display-3 fw-bolder">Bookmark your fa<span>vorite sites</span> </h1>
+        <i class="fa-solid fa-bookmark fs-3 mb-5" style="color: #b2ac48;"></i>
+
+    </div>
+
+    <div class="container p-2">
+        <i class="fa-solid fa-book-bookmark  fs-6" style="color: #000000;"></i>
+        <label for="inputName" class="mb-2 fw-bolder display-2 fs-6"> Site Name</label>
+        <input placeholder="Enter text here" id="inputName" class="input-style w-100 d-block mb-3 mx-auto" type="text">
+        <i class="fa-solid fa-link " style="color: #000000;"></i>
+        <label for="inputUrl" class="mb-2 fw-bolder display-2 fs-6"> Site URL</label>
+        <input placeholder="Enter Url here" id="inputUrl" class="input-style w-100 d-block text-primary  mx-auto"
+            type="text">
+        <div class="text-center">
+            <button id="btnSubmit" onclick="AddBookmark()"
+                class=" btn bg-danger  rounded-2 mt-5 border-0 text-white pt-1 pb-1 ps-5 pe-5 ">Submit</button>
+        </div>
+        <div class="line w-100 mb-5 mt-4"></div>
+    </div>
+    <div class="container ">
+        <div class="row table-container">
+
+            <div class="col-sm-12 gx-0">
+                <table class="w-100 mt-4 text-center">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tablebodycontent">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
