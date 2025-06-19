@@ -15,7 +15,7 @@ function AddBookmark() {
     var urlValue = inputUrl.value;
 
     if (!urlRegex.test(urlValue)&&!nameregex.test(myname)) {
-        alert(" ----لازم موقع له اسم من 3 حروف علي الاقل يا نجم -----او يرجي منك إدخال رابط صحيح يبدأ بـ http:// أو https:// ");
+        alert(" ----لازم موقع له اسم من 3 حروف علي الاقل  -----او يرجي منك إدخال رابط صحيح يبدأ بـ http:// أو https:// ");
         return;
     }
 
